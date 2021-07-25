@@ -6,6 +6,7 @@ type SearchPageType = {
     delet: () => void;
     onChange:(e:any)=> void;
     show: boolean;
+    value?:string
 }
 const SearchPage = (props: SearchPageType) => {
  
@@ -17,7 +18,7 @@ const SearchPage = (props: SearchPageType) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Search Page item</Modal.Title>
                 </Modal.Header>
-                <Modal.Body><input onChange={props.onChange} className="input-search" /></Modal.Body>
+                <Modal.Body><input value={props.value} onChange={props.onChange} className="input-search" /></Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={props.close}>
                         Cancel

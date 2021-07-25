@@ -16,7 +16,7 @@ function App() {
     dispach(getdata())
   }, [])
   const [input, setinput] = useState<string>(' ')
-  const [inputSearch, setinputSearch] = useState<string>(' ')
+  const [inputSearch, setinputSearch] = useState<string>('')
   const [data, setdata] = useState<boolean>(false)
   const onChangeInput = (e: any) => {
     setinput(e.target.value)
@@ -47,24 +47,17 @@ function App() {
     setShow(false);
   }
   const handeleCloseSerachPage = () => setshowSearch(false)
-  const HndeleOpenSearchPage = () => {
-    if (data === true) {
-      dispach(getdata())
-      setshowSearch(true)
-      setdata(false)
-    }
-    setdata(true)
-    setshowSearch(true)
-  }
+  const HndeleOpenSearchPage = () => setshowSearch(true)
   const onChange = (e: any) => {
     setinputSearch(e.target.value)
   }
   const handelSearchPage = () => {
+    if (inputSearch === '') {
+      dispach(getdata())
+    }
     dispach(search(inputSearch))
-    setinputSearch('')
     setshowSearch(false)
   }
-
   return (
     <div className="App">
       <div>
@@ -92,7 +85,7 @@ function App() {
           )
         })}
         <DeletePage show={show} delet={handelDeletItem} close={handeleClose} />
-        <SearchPage onChange={onChange} show={showSearch} delet={handelSearchPage} close={handeleCloseSerachPage} />
+        <SearchPage value={inputSearch} onChange={onChange} show={showSearch} delet={handelSearchPage} close={handeleCloseSerachPage} />
       </div>
     </div>
   );
