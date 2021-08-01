@@ -10,7 +10,7 @@ import Paragraph from '../component/paragraph/paragraph.component';
 const SignUpPage = () => {
     return (
         <div className='p-3'>
-            <img alt='Logo' className="m-auto mt-6" src="image/Star 1.jpg" />
+            <img alt='Logo' className="m-auto mt-6" src="image/Star 1.jPG" />
             <Input className='mt-8' placeholder="Fullname" />
             <Input className='mt-4' placeholder="Email" />
             <Input className='mt-4' placeholder="Password" />
