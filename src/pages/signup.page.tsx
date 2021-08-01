@@ -10,14 +10,14 @@ import Paragraph from '../component/paragraph/paragraph.component';
 const SignUpPage = () => {
     return (
         <div className='p-3'>
-            <img alt='Logo' className="m-auto mt-6" src="image/Star 1.jPG" />
+            <img alt='Logo' className="m-auto mt-6" src="image/Star 1.JPG" />
             <Input className='mt-8' placeholder="Fullname" />
             <Input className='mt-4' placeholder="Email" />
             <Input className='mt-4' placeholder="Password" />
             <Link to='mainPage'> <BigButton className='mt-6 mb-8' title="Sign Up" /></Link>
             <Line />
-            <BigbuttonIcone srcImage='image/google.jpg' className='mt-5 bg-blue-500 text-white'  title='Log in with Facebook' />
-            <BigbuttonIcone srcImage='image/google.jpg' className='mt-4 bg-gray-100'  title='Log in with Google' />
+            <BigbuttonIcone srcImage='image/google.JPG' className='mt-5 bg-blue-500 text-white'  title='Log in with Facebook' />
+            <BigbuttonIcone srcImage='image/google.JPG' className='mt-4 bg-gray-100'  title='Log in with Google' />
             <div className='flex justify-center mt-6'>
                 <Paragraph className='text-gray-500' title="By signing up you accept the" />
                 <Title className='ml-2 mt-0.5 text-blue-500' title='Terms of Service' />
