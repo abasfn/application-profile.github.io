@@ -28,7 +28,7 @@ const PageData = () => {
     ]
     return (
         <div className='p-3'>
-            <ProfileTitle titleClassName='text-xl mt-3.5' srcImage='image/dataIcone.jpg' title='Available time' paragraph='Adjust to your schedule' />
+            <ProfileTitle titleClassName='text-xl mt-3.5' srcImage='image/dataIcone.jPG' title='Available time' paragraph='Adjust to your schedule' />
             <div className='mt-8 space-y-4'>
                 <RectangleData className='grid grid-cols-4 gap-2 justify-items-stretch' model={model1} />
                 <RectangleData className='grid grid-cols-4 gap-2 justify-items-stretch' model={model2} />
@@ -46,7 +46,7 @@ const PageData = () => {
                 <div>
                     <Title className='text-base text-gray-900 mb-1' title='Schedule date & time' textAlign='text-left' />
                     <div className='flex'>
-                        <img src='image/Check Box.jpg' alt='Check Box' />
+                        <img src='image/Check Box.jPG' alt='Check Box' />
                         <Paragraph className='text-gray-500 ml-2' title="12 October, 2020 at 09.45 AM" />
                     </div>
                 </div>
